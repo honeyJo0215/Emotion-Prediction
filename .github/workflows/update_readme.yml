@@ -17,7 +17,7 @@ jobs:
 
       - name: Update README
         run: |
-          echo "## livetime 릴리즈 자동 반영" > README.md
+          echo "## livetime 모델 릴리즈 반영" > README.md
           echo "[![livetime Release](https://img.shields.io/github/v/release/honeyJo0215/livetime?label=livetime)](https://github.com/honeyJo0215/livetime/releases)" >> README.md
 
       - name: Commit and push README
