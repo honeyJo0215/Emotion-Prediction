@@ -1,4 +1,4 @@
-name: Update README with livetime release
+name: Update README and Create Release
 
 on:
   repository_dispatch:
@@ -8,23 +8,33 @@ permissions:
   contents: write
 
 jobs:
-  update-readme:
+  update:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Emotion-Prediction
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Update README.md
+      - name: Update README
         run: |
-          echo "## submodule release" > README.md
-          echo "[![Livetime Release](https://img.shields.io/github/v/release/honeyJo0215/livetime?label=livetime)](https://github.com/honeyJo0215/livetime/releases)" >> README.md
+          echo "## livetime 릴리즈 자동 반영" > README.md
+          echo "[![livetime Release](https://img.shields.io/github/v/release/honeyJo0215/livetime?label=livetime)](https://github.com/honeyJo0215/livetime/releases)" >> README.md
 
-      - name: Commit and push changes
+      - name: Commit and push README
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "auto update: livetime newest release" || echo "No changes to commit"
+          git commit -m "auto update: livetime newest release" || echo "No changes"
           git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/honeyJo0215/Emotion-Prediction.git HEAD:main
+
+      - name: Create release in Emotion-Prediction
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: livetime-v${{ github.run_number }}
+          name: "livetime 업데이트 릴리즈"
+          body: |
+            livetime 저장소의 새로운 릴리즈가 반영되었습니다.
+            [livetime 릴리즈 보기](https://github.com/honeyJo0215/livetime/releases)
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
