@@ -1,4 +1,3 @@
-
 import os
 import re
 import cv2
@@ -463,8 +462,6 @@ def train_multimodal():
             f.write(test_report)
         print(f"✅ Test report: {report_path}")
 
-# =============================================================================
-# 메인 실행부
-# =============================================================================
+# main
 if __name__ == "__main__":
     train_multimodal()
