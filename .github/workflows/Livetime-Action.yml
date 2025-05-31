@@ -1,0 +1,9 @@
+name: Livetime-Action
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "✅ GitHub Actions 작동 완료!"
