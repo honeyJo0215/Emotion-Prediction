@@ -1,1 +1,0 @@
-Blip model
