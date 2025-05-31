@@ -4,6 +4,9 @@ on:
   repository_dispatch:
     types: [livetime-release]
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
