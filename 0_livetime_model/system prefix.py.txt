@@ -1,0 +1,14 @@
+import os, sys
+
+# conda 환경 경로 가져오기
+conda_prefix = os.environ.get('CONDA_PREFIX') or os.environ.get('CONDA_DEFAULT_ENV')
+if conda_prefix:
+    # Linux/Mac: $CONDA_PREFIX/bin
+    bin_dir = os.path.join(conda_prefix, 'bin')
+    # Windows: $CONDA_PREFIX/Library/bin
+    win_dir = os.path.join(conda_prefix, 'Library', 'bin')
+    # 실제 존재하는 쪽을 PATH 앞에 추가
+    ffplay_dir = bin_dir if os.path.isdir(bin_dir) else win_dir
+    os.environ['PATH'] = ffplay_dir + os.pathsep + os.environ['PATH']
+
+# 이제부터 subprocess로 'ffplay' 호출 시 conda env 안의 ffplay를 찾습니다.
