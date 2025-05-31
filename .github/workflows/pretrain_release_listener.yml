@@ -17,7 +17,7 @@ jobs:
       - name: Append Pretrain Release Info to README
         run: |
           echo "## Pretrain 모델 릴리즈 반영" > pretrain_section.txt
-          echo "[![Pretrain Release](https://img.shields.io/github/v/release/honeyJo0215/pretrain-model?label=pretrain)](https://github.com/honeyJo0215/pretrain-model/releases)" >> pretrain_section.txt
+          echo "[![Pretrain Release](https://img.shields.io/github/v/release/honeyJo0215/Pretrain_model?label=pretrain)](https://github.com/honeyJo0215/Pretrain_model/releases)" >> pretrain_section.txt
           cat README.md >> pretrain_section.txt
           mv pretrain_section.txt README.md
 
@@ -36,6 +36,6 @@ jobs:
           name: "pretrain-model 릴리즈 반영"
           body: |
             pretrain-model의 새로운 릴리즈가 Emotion-Prediction에 반영되었습니다.
-            👉 [pretrain 릴리즈 보기](https://github.com/honeyJo0215/pretrain-model/releases)
+            👉 [pretrain 릴리즈 보기](https://github.com/honeyJo0215/Pretrain_model/releases)
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
