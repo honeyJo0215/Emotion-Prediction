@@ -1,3 +1,6 @@
 [submodule "0_livetime_models"]
 	path = 0_livetime_models
 	url = https://github.com/honeyJo0215/livetime
+[submodule "0_pretrain_models"]
+	path = 0_pretrain_models
+	url = https://github.com/honeyJo0215/Pretrain_model
