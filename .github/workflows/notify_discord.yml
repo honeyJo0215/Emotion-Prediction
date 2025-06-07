@@ -1,0 +1,40 @@
+name: Notify Discord on Report
+
+on:
+  workflow_run:
+    workflows: ["Train Model"]
+    types:
+      - completed
+
+jobs:
+  notify:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: report
+
+    - name: Read report
+      id: read_report
+      run: |
+        REPORT=$(cat report.txt)
+        REPORT="${REPORT//'%'/'%25'}"
+        REPORT="${REPORT//$'\n'/'%0A'}"
+        REPORT="${REPORT//$'\r'/'%0D'}"
+        echo "report_body=$REPORT" >> $GITHUB_OUTPUT
+
+    - name: Notify Discord
+      run: |
+        curl -X POST ${{ secrets.DISCORD_WEBHOOK_URL }} \
+          -H "Content-Type: application/json" \
+          -d "{
+                \"username\": \"AI Test Bot\",
+                \"embeds\": [{
+                  \"title\": \"✅ 모델 테스트 완료\",
+                  \"description\": \"\`\`\`${{ steps.read_report.outputs.report_body }}\`\`\`\",
+                  \"color\": 5814783
+                }]
+              }"
