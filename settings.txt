@@ -1,10 +1,10 @@
 Emotion-Prediction/
 ├── .github/
 │   └── workflows/
-├── 0_livetime_model/
-├── 0_livetime_models/
-├── 0_pretrain_model/
-├── 0_pretrain_models/
+├── 0_livetime_model/ --> code files for livetime model
+├── 0_livetime_models/ --> livetime model sub repository
+├── 0_pretrain_model/ --> code files for pretrain model
+├── 0_pretrain_models/ --> pretrain model sub repository
 ├── data/
 ├── progression/
 │   ├── 2February/
