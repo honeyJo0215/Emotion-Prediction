@@ -20,7 +20,7 @@ conda activate ai-env
 pip install -r requirements.txt
 
 [Notes]
-- This project is designed to run in a **Conda environment**.
+- This project is designed to run in a Conda environment.
 - The `requirements.txt` file is generated via `pip freeze` and may not reflect all conda-installed packages.
 - For GPU support, ensure CUDA and cuDNN are properly installed.
 
