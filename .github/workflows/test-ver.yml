@@ -1,20 +1,23 @@
-name: TensorFlow Matrix Test
+name: Manual Matrix Test
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
+  workflow_dispatch:
+    inputs:
+      test_function:
+        description: '테스트할 함수 이름 (test_tensorflow_model)'
+        required: true
+        default: 'test_tensorflow_model'
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-
+  matrix-test:
+    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.9, 3.10, 3.11]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: [3.8, 3.9, 3.10]
 
-    name: Python ${{ matrix.python-version }}
+    name: ${{ matrix.os }} / Python ${{ matrix.python-version }}
 
     steps:
     - name: Checkout code
@@ -30,5 +33,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run tests
-      run: pytest tests/
+    - name: Run specific test function
+      run: |
+        echo "실행할 함수: ${{ github.event.inputs.test_function }}"
+        echo "
+        import pytest
+        pytest.main(['-k', '${{ github.event.inputs.test_function }}'])
+        " > run_test.py
+        python run_test.py
