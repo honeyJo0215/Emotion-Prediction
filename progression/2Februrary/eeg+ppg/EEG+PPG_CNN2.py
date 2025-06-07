@@ -46,11 +46,7 @@ os.makedirs(SAVE_PATH, exist_ok=True)
 
 # dual stream feature extractor
 def create_dual_stream_feature_extractor():
-    """
-    EEG와 PPG를 각각 CNN으로 특징 추출
-    - EEG Branch: 입력 (32, 128, 1)
-    - PPG Branch: 입력 (128, 1, 1)
-    """
+
     # EEG Branch
     eeg_input = Input(shape=(32, 128, 1), name="EEG_Input")
     x = Conv2D(16, (4, 16), strides=(2, 8), padding='valid', activation='relu')(eeg_input)
@@ -78,9 +74,7 @@ def create_dual_stream_feature_extractor():
 
 # inter modality fusion
 def create_inter_modality_fusion(eeg_features, ppg_features, num_heads=4, d_model=128, dropout_rate=0.25):
-    """
-    EEG와 PPG 간의 상호관계를 학습하는 Cross‑Modal Transformer
-    """
+
     # EEG → PPG
     eeg_query = Dense(d_model)(eeg_features)
     ppg_key_value = Dense(d_model)(ppg_features)
@@ -122,9 +116,7 @@ def create_inter_modality_fusion(eeg_features, ppg_features, num_heads=4, d_mode
 
 # intra modality
 def create_intra_modality_encoding(eeg_features, ppg_features, num_heads=4, d_model=128, dropout_rate=0.25):
-    """
-    EEG와 PPG 각각의 고유 특성을 보존 및 강화하는 Intra‑Modal Encoding
-    """
+
     # EEG Self-Attention
     eeg_expanded = Lambda(lambda x: tf.expand_dims(x, axis=1))(eeg_features)
     eeg_self_att = MultiHeadAttention(num_heads=num_heads, key_dim=d_model, name="SelfAttention_EEG")(
@@ -259,7 +251,7 @@ def bayesian_opt_lambda(train_data, val_data, alpha_values, max_iterations=15):
                         "Inter_Classification": "accuracy",
                         "EEG_Classification": "accuracy",
                         "PPG_Classification": "accuracy",
-                        "Weight_Softmax": None  # 또는 빈 리스트 []
+                        "Weight_Softmax": None  
                     }
         )
 
@@ -279,7 +271,7 @@ def bayesian_opt_lambda(train_data, val_data, alpha_values, max_iterations=15):
         options={'maxiter': max_iterations}
     )
     best_lambdas = result.x
-    print(f"✅ 최적 λ 값 (Bayesian Optimization): {best_lambdas}")
+    print(f"best λ value (Bayesian Optimization): {best_lambdas}")
     return best_lambdas
 
 def compute_class_weights(labels, num_classes=3):
