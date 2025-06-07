@@ -1,3 +1,23 @@
+Emotion-Prediction/
+├── .github/
+│   └── workflows/
+├── 0_livetime_model/
+├── 0_livetime_models/
+├── 0_pretrain_model/
+├── 0_pretrain_models/
+├── data/
+├── progression/
+│   ├── 2February/
+│   ├── 3March/
+│   ├── 4April/
+│   ├── 5May/
+│   └── 6June/
+├── README.md
+├── requirements.txt
+├── settings.txt
+└── .gitmodules
+
+
 # Project Runtime Environment (Conda-based)
 
 [Python Environment]
