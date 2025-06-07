@@ -1,1 +1,2 @@
 tesnorflow==2.12.0
+pytest
