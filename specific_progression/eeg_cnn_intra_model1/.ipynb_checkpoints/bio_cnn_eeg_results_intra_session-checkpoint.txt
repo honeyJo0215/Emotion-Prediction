@@ -1,0 +1,160 @@
+Intra-Session(Subject) Cross-Validation Results
+
+Participant s04 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     1.0000    0.4000    0.5714         5
+           1     0.4000    1.0000    0.5714         2
+
+    accuracy                         0.5714         7
+   macro avg     0.7000    0.7000    0.5714         7
+weighted avg     0.8286    0.5714    0.5714         7
+
+False Positive Rate (FPR): 0.6
+True Positive Rate (TPR): 1.0
+
+Participant s02 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.4286    1.0000    0.6000         3
+           1     0.0000    0.0000    0.0000         4
+
+    accuracy                         0.4286         7
+   macro avg     0.2143    0.5000    0.3000         7
+weighted avg     0.1837    0.4286    0.2571         7
+
+False Positive Rate (FPR): 0.0
+True Positive Rate (TPR): 0.0
+
+Participant s29 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.5714    1.0000    0.7273         4
+           1     0.0000    0.0000    0.0000         3
+
+    accuracy                         0.5714         7
+   macro avg     0.2857    0.5000    0.3636         7
+weighted avg     0.3265    0.5714    0.4156         7
+
+False Positive Rate (FPR): 0.0
+True Positive Rate (TPR): 0.0
+
+Participant s07 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.0000    0.0000    0.0000         2
+           1     0.7143    1.0000    0.8333         5
+
+    accuracy                         0.7143         7
+   macro avg     0.3571    0.5000    0.4167         7
+weighted avg     0.5102    0.7143    0.5952         7
+
+False Positive Rate (FPR): 1.0
+True Positive Rate (TPR): 1.0
+
+Participant s25 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.0000    0.0000    0.0000         3
+           1     0.2500    0.3333    0.2857         3
+
+    accuracy                         0.1667         6
+   macro avg     0.1250    0.1667    0.1429         6
+weighted avg     0.1250    0.1667    0.1429         6
+
+False Positive Rate (FPR): 1.0
+True Positive Rate (TPR): 0.3333333333333333
+
+Participant s01 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.5000    0.7500    0.6000         4
+           1     0.5000    0.2500    0.3333         4
+
+    accuracy                         0.5000         8
+   macro avg     0.5000    0.5000    0.4667         8
+weighted avg     0.5000    0.5000    0.4667         8
+
+False Positive Rate (FPR): 0.25
+True Positive Rate (TPR): 0.25
+
+Participant s14 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.4286    1.0000    0.6000         3
+           1     0.0000    0.0000    0.0000         4
+
+    accuracy                         0.4286         7
+   macro avg     0.2143    0.5000    0.3000         7
+weighted avg     0.1837    0.4286    0.2571         7
+
+False Positive Rate (FPR): 0.0
+True Positive Rate (TPR): 0.0
+
+Participant s28 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.0000    0.0000    0.0000         3
+           1     0.5714    1.0000    0.7273         4
+
+    accuracy                         0.5714         7
+   macro avg     0.2857    0.5000    0.3636         7
+weighted avg     0.3265    0.5714    0.4156         7
+
+False Positive Rate (FPR): 1.0
+True Positive Rate (TPR): 1.0
+
+Participant s19 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.5000    0.3333    0.4000         3
+           1     0.5000    0.6667    0.5714         3
+
+    accuracy                         0.5000         6
+   macro avg     0.5000    0.5000    0.4857         6
+weighted avg     0.5000    0.5000    0.4857         6
+
+False Positive Rate (FPR): 0.6666666666666666
+True Positive Rate (TPR): 0.6666666666666666
+
+Participant s11 Classification Report:
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.5000    1.0000    0.6667         3
+           1     0.0000    0.0000    0.0000         3
+
+    accuracy                         0.5000         6
+   macro avg     0.2500    0.5000    0.3333         6
+weighted avg     0.2500    0.5000    0.3333         6
+
+False Positive Rate (FPR): 0.0
+True Positive Rate (TPR): 0.0
+
+--- Intra-Session Cross-Validation Summary ---
+Average Accuracy: 0.4952 ± 0.1350
+Average ROC AUC Score: 0.3949 ± 0.1966
+Average F1 Score: 0.3941 ± 0.1381
+
+Aggregated Confusion Matrix:
+[[19 14]
+ [20 15]]

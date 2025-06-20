@@ -1,0 +1,6 @@
+Final Evaluation across all participants:
+Overall Evaluation
+Accuracy: 0.5441
+Precision: 0.5438
+Recall: 0.5441
+F1-Score: 0.5438

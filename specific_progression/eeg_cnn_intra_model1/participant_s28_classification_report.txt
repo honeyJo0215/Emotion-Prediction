@@ -1,0 +1,9 @@
+Participant s28 Classification Report:
+              precision    recall  f1-score   support
+
+           0     1.0000    0.5000    0.6667         4
+           1     0.6000    1.0000    0.7500         3
+
+    accuracy                         0.7143         7
+   macro avg     0.8000    0.7500    0.7083         7
+weighted avg     0.8286    0.7143    0.7024         7

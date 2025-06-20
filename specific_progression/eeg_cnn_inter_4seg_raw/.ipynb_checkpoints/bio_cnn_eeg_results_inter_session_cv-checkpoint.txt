@@ -1,0 +1,20 @@
+Inter-Session(Subject) Cross-Validation Results(이거 아님 실험자를 8:2로 나눈 것이라서)
+=============================================
+
+Final Accuracy: 0.5537
+ROC AUC Score: 0.4971
+F1 Score: 0.5042
+
+Confusion Matrix:
+[[ 52 228]
+ [ 71 319]]
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.4228    0.1857    0.2581       280
+           1     0.5832    0.8179    0.6809       390
+
+    accuracy                         0.5537       670
+   macro avg     0.5030    0.5018    0.4695       670
+weighted avg     0.5161    0.5537    0.5042       670

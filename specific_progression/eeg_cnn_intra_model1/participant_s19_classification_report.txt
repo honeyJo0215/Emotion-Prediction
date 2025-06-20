@@ -1,0 +1,9 @@
+Participant s19 Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.0000    0.0000    0.0000         4
+           1     0.3333    1.0000    0.5000         2
+
+    accuracy                         0.3333         6
+   macro avg     0.1667    0.5000    0.2500         6
+weighted avg     0.1111    0.3333    0.1667         6
