@@ -1,0 +1,9 @@
+Participant s04 Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.7143    1.0000    0.8333         5
+           1     0.0000    0.0000    0.0000         2
+
+    accuracy                         0.7143         7
+   macro avg     0.3571    0.5000    0.4167         7
+weighted avg     0.5102    0.7143    0.5952         7

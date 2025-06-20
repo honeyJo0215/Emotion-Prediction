@@ -1,0 +1,9 @@
+s25
+              precision    recall  f1-score   support
+
+    negative       0.86      0.74      0.79        34
+    positive       0.71      0.85      0.77        26
+
+    accuracy                           0.78        60
+   macro avg       0.79      0.79      0.78        60
+weighted avg       0.80      0.78      0.78        60

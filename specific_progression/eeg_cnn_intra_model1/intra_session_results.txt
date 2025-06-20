@@ -1,0 +1,27 @@
+Fold Results:
+Accuracy: 0.5736
+Precision: 0.6868
+Recall: 0.5736
+F1-Score: 0.5349
+Fold Results:
+Accuracy: 0.6860
+Precision: 0.7293
+Recall: 0.6860
+F1-Score: 0.6687
+Fold Results:
+Accuracy: 0.6899
+Precision: 0.6899
+Recall: 0.6899
+F1-Score: 0.6897
+Fold Results:
+Accuracy: 0.6809
+Precision: 0.6811
+Recall: 0.6809
+F1-Score: 0.6810
+Fold Results:
+Accuracy: 0.6304
+Precision: 0.6327
+Recall: 0.6304
+F1-Score: 0.6308
+
+Mean accuracy across folds: 0.6522

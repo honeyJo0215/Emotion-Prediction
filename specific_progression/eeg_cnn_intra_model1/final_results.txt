@@ -1,0 +1,12 @@
+Intra-Session Cross-Validation Results
+Participant s01 - Test Accuracy: 0.3750
+Participant s02 - Test Accuracy: 0.5714
+Participant s04 - Test Accuracy: 0.7143
+Participant s07 - Test Accuracy: 0.8571
+Participant s11 - Test Accuracy: 0.6667
+Participant s14 - Test Accuracy: 0.7143
+Participant s19 - Test Accuracy: 0.8333
+Participant s25 - Test Accuracy: 0.3333
+Participant s28 - Test Accuracy: 0.7143
+Participant s29 - Test Accuracy: 0.5714
+Average accuracy across participants: 0.6351

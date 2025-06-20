@@ -1,0 +1,84 @@
+Inter-Session(Subject) Cross-Validation Results
+
+Final Accuracy:
+0.4769
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.4808    0.7812    0.5952        32
+           1     0.4615    0.1818    0.2609        33
+
+    accuracy                         0.4769        65
+   macro avg     0.4712    0.4815    0.4281        65
+weighted avg     0.4710    0.4769    0.4255        65
+
+False Positive Rate (FPR): 0.2188
+True Positive Rate (TPR): 0.1818
+
+Prediction Details (file-level):
+Sample 1: Predicted=0, Actual=0 (Correct)
+Sample 2: Predicted=0, Actual=0 (Correct)
+Sample 3: Predicted=0, Actual=1 (Incorrect)
+Sample 4: Predicted=0, Actual=0 (Correct)
+Sample 5: Predicted=0, Actual=0 (Correct)
+Sample 6: Predicted=0, Actual=1 (Incorrect)
+Sample 7: Predicted=0, Actual=1 (Incorrect)
+Sample 8: Predicted=1, Actual=1 (Correct)
+Sample 9: Predicted=0, Actual=0 (Correct)
+Sample 10: Predicted=0, Actual=1 (Incorrect)
+Sample 11: Predicted=0, Actual=0 (Correct)
+Sample 12: Predicted=0, Actual=1 (Incorrect)
+Sample 13: Predicted=0, Actual=0 (Correct)
+Sample 14: Predicted=0, Actual=1 (Incorrect)
+Sample 15: Predicted=0, Actual=0 (Correct)
+Sample 16: Predicted=0, Actual=0 (Correct)
+Sample 17: Predicted=0, Actual=1 (Incorrect)
+Sample 18: Predicted=0, Actual=1 (Incorrect)
+Sample 19: Predicted=1, Actual=1 (Correct)
+Sample 20: Predicted=1, Actual=0 (Incorrect)
+Sample 21: Predicted=0, Actual=1 (Incorrect)
+Sample 22: Predicted=0, Actual=1 (Incorrect)
+Sample 23: Predicted=0, Actual=0 (Correct)
+Sample 24: Predicted=0, Actual=0 (Correct)
+Sample 25: Predicted=0, Actual=0 (Correct)
+Sample 26: Predicted=0, Actual=1 (Incorrect)
+Sample 27: Predicted=0, Actual=1 (Incorrect)
+Sample 28: Predicted=1, Actual=0 (Incorrect)
+Sample 29: Predicted=0, Actual=0 (Correct)
+Sample 30: Predicted=0, Actual=1 (Incorrect)
+Sample 31: Predicted=0, Actual=0 (Correct)
+Sample 32: Predicted=0, Actual=0 (Correct)
+Sample 33: Predicted=0, Actual=1 (Incorrect)
+Sample 34: Predicted=1, Actual=1 (Correct)
+Sample 35: Predicted=0, Actual=0 (Correct)
+Sample 36: Predicted=0, Actual=0 (Correct)
+Sample 37: Predicted=0, Actual=0 (Correct)
+Sample 38: Predicted=0, Actual=1 (Incorrect)
+Sample 39: Predicted=1, Actual=1 (Correct)
+Sample 40: Predicted=0, Actual=1 (Incorrect)
+Sample 41: Predicted=0, Actual=1 (Incorrect)
+Sample 42: Predicted=0, Actual=1 (Incorrect)
+Sample 43: Predicted=0, Actual=1 (Incorrect)
+Sample 44: Predicted=0, Actual=1 (Incorrect)
+Sample 45: Predicted=1, Actual=1 (Correct)
+Sample 46: Predicted=0, Actual=1 (Incorrect)
+Sample 47: Predicted=0, Actual=1 (Incorrect)
+Sample 48: Predicted=1, Actual=0 (Incorrect)
+Sample 49: Predicted=0, Actual=1 (Incorrect)
+Sample 50: Predicted=1, Actual=0 (Incorrect)
+Sample 51: Predicted=0, Actual=0 (Correct)
+Sample 52: Predicted=0, Actual=0 (Correct)
+Sample 53: Predicted=1, Actual=1 (Correct)
+Sample 54: Predicted=0, Actual=0 (Correct)
+Sample 55: Predicted=0, Actual=1 (Incorrect)
+Sample 56: Predicted=0, Actual=0 (Correct)
+Sample 57: Predicted=0, Actual=1 (Incorrect)
+Sample 58: Predicted=0, Actual=1 (Incorrect)
+Sample 59: Predicted=0, Actual=0 (Correct)
+Sample 60: Predicted=0, Actual=1 (Incorrect)
+Sample 61: Predicted=0, Actual=0 (Correct)
+Sample 62: Predicted=0, Actual=0 (Correct)
+Sample 63: Predicted=1, Actual=0 (Incorrect)
+Sample 64: Predicted=1, Actual=0 (Incorrect)
+Sample 65: Predicted=1, Actual=0 (Incorrect)

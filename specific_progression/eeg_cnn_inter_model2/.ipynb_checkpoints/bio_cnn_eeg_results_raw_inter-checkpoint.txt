@@ -1,0 +1,86 @@
+Inter-Session(Subject) Cross-Validation Results
+
+Final Accuracy:
+0.5821
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.5000    0.2500    0.3333        28
+           1     0.6038    0.8205    0.6957        39
+
+    accuracy                         0.5821        67
+   macro avg     0.5519    0.5353    0.5145        67
+weighted avg     0.5604    0.5821    0.5442        67
+
+False Positive Rate (FPR): 0.7500
+True Positive Rate (TPR): 0.8205
+
+Prediction Details (file-level):
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=0, Actual=1 (Incorrect)
+Participant s28: Predicted=0, Actual=1 (Incorrect)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=0, Actual=1 (Incorrect)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=0, Actual=1 (Incorrect)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=1, Actual=1 (Correct)
+Participant s28: Predicted=0, Actual=0 (Correct)
+Participant s28: Predicted=0, Actual=0 (Correct)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=0, Actual=0 (Correct)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s28: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=0, Actual=1 (Incorrect)
+Participant s02: Predicted=0, Actual=1 (Incorrect)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=0, Actual=1 (Incorrect)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=1 (Correct)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=0, Actual=0 (Correct)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=0, Actual=0 (Correct)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=0, Actual=0 (Correct)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=1, Actual=0 (Incorrect)
+Participant s02: Predicted=0, Actual=0 (Correct)

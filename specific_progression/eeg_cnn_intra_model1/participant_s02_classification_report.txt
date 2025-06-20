@@ -1,0 +1,9 @@
+Participant s02 Classification Report:
+              precision    recall  f1-score   support
+
+           0     0.6667    0.6667    0.6667         3
+           1     0.7500    0.7500    0.7500         4
+
+    accuracy                         0.7143         7
+   macro avg     0.7083    0.7083    0.7083         7
+weighted avg     0.7143    0.7143    0.7143         7
