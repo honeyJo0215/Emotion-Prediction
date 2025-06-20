@@ -1,0 +1,33 @@
+name: /home/bcml1/miniconda/envs/mycondaenv
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+  - rapidsai
+  - defaults
+dependencies:
+  - python==3.11.12
+  - tensorflow==2.17.0
+  - cusignal
+  - plotly
+  - ipywidgets
+  - lmfit
+  - qt
+  - pyqt
+  - seaborn
+  - tmux
+  - matplotlib
+  - libjpeg-turbo
+  - libtiff
+  - pillow
+  - numpy
+  - nbconvert
+  - diffusers
+  - moviepy
+  - transformers
+  - accelerate
+  - deepface
+  - scikit-image
+  - optree
+  - einops
+prefix: /home/bcml1/miniconda/envs/mycondaenv
