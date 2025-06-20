@@ -1,0 +1,2 @@
+Model : DDPM / CNN
+DATA : SEEDIV, DEAP
