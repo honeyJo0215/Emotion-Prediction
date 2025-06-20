@@ -1,2 +1,2 @@
 Model : SVM
-DATA : SEEDIV
+DATA : SEEDIV, DEAP
