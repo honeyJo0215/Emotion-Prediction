@@ -1,0 +1,2 @@
+Model : SVM
+DATA : SEEDIV
