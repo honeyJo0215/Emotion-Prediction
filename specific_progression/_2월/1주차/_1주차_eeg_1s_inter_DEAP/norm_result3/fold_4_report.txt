@@ -1,0 +1,20 @@
+Classification Report:
+              precision    recall  f1-score   support
+
+     Excited       0.26      0.10      0.15      1860
+     Relaxed       0.17      0.13      0.15      1140
+    Stressed       0.16      0.22      0.19      1500
+       Bored       0.24      0.45      0.31      1920
+     Neutral       0.25      0.01      0.02       780
+
+    accuracy                           0.21      7200
+   macro avg       0.22      0.18      0.16      7200
+weighted avg       0.22      0.21      0.19      7200
+
+
+Confusion Matrix:
+[[189 321 631 709  10]
+ [138 145 253 597   7]
+ [229  93 331 847   0]
+ [139 265 652 860   4]
+ [ 35  34 149 555   7]]

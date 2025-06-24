@@ -1,0 +1,11 @@
+              precision    recall  f1-score   support
+
+     Excited       0.33      0.21      0.25        39
+     Relaxed       0.51      0.78      0.62        78
+    Stressed       0.00      0.00      0.00         7
+       Bored       0.39      0.28      0.32        68
+     Neutral       0.00      0.00      0.00         0
+
+    accuracy                           0.46       192
+   macro avg       0.25      0.25      0.24       192
+weighted avg       0.41      0.46      0.42       192

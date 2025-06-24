@@ -1,0 +1,156 @@
+2025-02-03 15:47:22.085516: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-03 15:47:24.533332: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 15:47:24.581302: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 15:47:24.585310: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:28:22.416379: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:28:22.439055: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:28:22.442946: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+Traceback (most recent call last):
+  File "/home/bcml1/sigenv/_1주차_eeg_1s_inter_DEAP/eeg_5label_inter_3.py", line 466, in <module>
+    train_inter_subject_cv_final_model()
+  File "/home/bcml1/sigenv/_1주차_eeg_1s_inter_DEAP/eeg_5label_inter_3.py", line 321, in train_inter_subject_cv_final_model
+    fold_train_dataset = tf.data.Dataset.from_tensor_slices((fold_train_data, fold_train_labels)).batch(8).shuffle(1000)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 826, in from_tensor_slices
+    return from_tensor_slices_op._from_tensor_slices(tensors, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/data/ops/from_tensor_slices_op.py", line 25, in _from_tensor_slices
+    return _TensorSliceDataset(tensors, name=name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/data/ops/from_tensor_slices_op.py", line 33, in __init__
+    element = structure.normalize_element(element)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/data/util/structure.py", line 134, in normalize_element
+    ops.convert_to_tensor(t, name="component_%d" % i, dtype=dtype))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/profiler/trace.py", line 183, in wrapped
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/framework/ops.py", line 713, in convert_to_tensor
+    return tensor_conversion_registry.convert(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/framework/tensor_conversion_registry.py", line 234, in convert
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/framework/constant_tensor_conversion.py", line 29, in _constant_tensor_conversion_function
+    return constant_op.constant(v, dtype=dtype, name=name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/ops/weak_tensor_ops.py", line 142, in wrapper
+    return op(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/framework/constant_op.py", line 276, in constant
+    return _constant_impl(value, dtype, shape, name, verify_shape=False,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/framework/constant_op.py", line 289, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/framework/constant_op.py", line 301, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/framework/constant_op.py", line 107, in convert_to_eager_tensor
+    ctx.ensure_initialized()
+  File "/home/bcml1/miniconda/envs/mycondaenv/lib/python3.12/site-packages/tensorflow/python/eager/context.py", line 605, in ensure_initialized
+    context_handle = pywrap_tfe.TFE_NewContext(opts)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tensorflow.python.framework.errors_impl.InternalError: cudaSetDevice() on GPU:0 failed. Status: out of memory
+2025-02-03 19:28:37.443973: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-03 19:29:32.878070: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:29:33.996306: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:29:34.000431: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:45:06.456366: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:45:06.477312: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:45:06.479927: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:45:06.630943: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:45:06.632560: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:45:06.634036: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 19:45:06.635444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1928] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 5000 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3090, pci bus id: 0000:07:00.0, compute capability: 8.6
+2025-02-03 19:45:06.678945: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 4.88GiB (5242880000 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.679083: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 4.39GiB (4718592000 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.679190: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 3.96GiB (4246732800 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.679294: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 3.56GiB (3822059520 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.679397: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 3.20GiB (3439853568 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.679498: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 2.88GiB (3095868160 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.679603: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 2.59GiB (2786281216 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.679707: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 2.33GiB (2507653120 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.679815: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 2.10GiB (2256887808 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.679918: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.89GiB (2031198976 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.680019: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.70GiB (1828079104 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.680130: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.53GiB (1645271296 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.680232: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.38GiB (1480744192 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-03 19:45:06.680332: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.24GiB (1332669696 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1738611911.305296 1545701 service.cc:145] XLA service 0x7fde30002ca0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1738611911.324305 1545701 service.cc:153]   StreamExecutor device (0): NVIDIA GeForce RTX 3090, Compute Capability 8.6
+2025-02-03 19:45:11.510082: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:268] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2025-02-03 19:45:12.365781: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:465] Loaded cuDNN version 8907
+I0000 00:00:1738611925.187182 1545701 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2025-02-03 23:38:24.357302: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-03 23:38:35.638086: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 23:38:36.041989: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 23:38:36.046073: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 23:38:42.143345: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 23:38:42.147317: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 23:38:42.151069: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 23:38:42.309339: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 23:38:42.310881: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 23:38:42.312321: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-03 23:38:42.313730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1928] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 5000 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3090, pci bus id: 0000:07:00.0, compute capability: 8.6
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1738625926.957557 1601475 service.cc:145] XLA service 0x7fc040003f20 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1738625926.957736 1601475 service.cc:153]   StreamExecutor device (0): NVIDIA GeForce RTX 3090, Compute Capability 8.6
+2025-02-03 23:38:47.096361: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:268] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2025-02-03 23:38:47.604152: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:465] Loaded cuDNN version 8907
+I0000 00:00:1738625935.330973 1601475 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2025-02-04 01:10:36.077849: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-04 01:10:44.222065: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 01:10:44.343251: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 01:10:44.345791: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 01:19:56.972473: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 01:19:56.974376: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 01:19:56.976355: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 01:19:57.116331: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 01:19:57.118132: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 01:19:57.119729: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 01:19:57.121417: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1928] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 5000 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3090, pci bus id: 0000:07:00.0, compute capability: 8.6
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1738632001.929611 1710667 service.cc:145] XLA service 0x7ff97000ad00 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1738632001.929956 1710667 service.cc:153]   StreamExecutor device (0): NVIDIA GeForce RTX 3090, Compute Capability 8.6
+2025-02-04 01:20:02.075086: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:268] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2025-02-04 01:20:02.587015: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:465] Loaded cuDNN version 8907
+I0000 00:00:1738632010.723162 1710667 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+2025-02-04 03:30:27.817593: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-04 03:30:31.363328: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 03:30:31.406663: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 03:30:31.408348: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 04:17:17.716643: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 04:17:17.804428: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 04:17:17.807110: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 04:17:18.102116: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 04:17:18.105376: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 04:17:18.108652: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-02-04 04:17:18.110516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1928] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 5000 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3090, pci bus id: 0000:07:00.0, compute capability: 8.6
+2025-02-04 04:17:18.159093: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 4.88GiB (5242880000 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.159260: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 4.39GiB (4718592000 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.159393: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 3.96GiB (4246732800 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.159522: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 3.56GiB (3822059520 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.159651: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 3.20GiB (3439853568 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.159781: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 2.88GiB (3095868160 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.159913: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 2.59GiB (2786281216 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.160040: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 2.33GiB (2507653120 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.160166: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 2.10GiB (2256887808 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.160291: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.89GiB (2031198976 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.160420: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.70GiB (1828079104 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.160545: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.53GiB (1645271296 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.160667: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.38GiB (1480744192 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+2025-02-04 04:17:18.160802: I external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:1566] failed to allocate 1.24GiB (1332669696 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1738642643.757126 2407299 service.cc:145] XLA service 0x7f8c74002390 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1738642643.757202 2407299 service.cc:153]   StreamExecutor device (0): NVIDIA GeForce RTX 3090, Compute Capability 8.6
+2025-02-04 04:17:23.877486: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:268] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2025-02-04 04:17:24.435406: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:465] Loaded cuDNN version 8907
+I0000 00:00:1738642655.128596 2407299 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
