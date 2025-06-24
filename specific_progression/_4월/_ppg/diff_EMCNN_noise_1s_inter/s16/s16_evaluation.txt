@@ -1,0 +1,17 @@
+Inter-subject (Left-out subject = s16)
+              precision    recall  f1-score   support
+
+           0       0.23      1.00      0.37       540
+           1       0.00      0.00      0.00       360
+           2       0.00      0.00      0.00       660
+           3       0.00      0.00      0.00       840
+
+    accuracy                           0.23      2400
+   macro avg       0.06      0.25      0.09      2400
+weighted avg       0.05      0.23      0.08      2400
+
+Confusion Matrix:
+[[540   0   0   0]
+ [360   0   0   0]
+ [660   0   0   0]
+ [840   0   0   0]]

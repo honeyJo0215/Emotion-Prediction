@@ -1,0 +1,12 @@
+Global Classification Report (LOSO Inter-Subject):
+              precision    recall  f1-score   support
+
+           0       0.48      0.84      0.61      1080
+           1       0.27      0.38      0.31       300
+           2       0.59      0.10      0.17       540
+           3       0.00      0.00      0.00       480
+
+    accuracy                           0.45      2400
+   macro avg       0.33      0.33      0.27      2400
+weighted avg       0.38      0.45      0.35      2400
+

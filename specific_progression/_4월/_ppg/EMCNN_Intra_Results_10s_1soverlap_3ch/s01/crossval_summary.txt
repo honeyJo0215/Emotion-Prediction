@@ -1,0 +1,104 @@
+Subject s01 5-Fold Cross Validation Summary
+
+fold_1 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       140
+           1       0.89      0.97      0.93        65
+           2       0.99      0.95      0.97       107
+           3       0.98      0.96      0.97        96
+
+    accuracy                           0.97       408
+   macro avg       0.96      0.97      0.96       408
+weighted avg       0.97      0.97      0.97       408
+
+Confusion Matrix:
+[[139   1   0   0]
+ [  1  63   0   1]
+ [  0   4 102   1]
+ [  0   3   1  92]]
+
+fold_2 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      0.95      0.97       149
+           1       0.98      0.98      0.98        65
+           2       0.96      0.97      0.97       103
+           3       0.94      0.98      0.96        91
+
+    accuracy                           0.97       408
+   macro avg       0.97      0.97      0.97       408
+weighted avg       0.97      0.97      0.97       408
+
+Confusion Matrix:
+[[142   0   2   5]
+ [  1  64   0   0]
+ [  1   1 100   1]
+ [  0   0   2  89]]
+
+fold_3 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.98       125
+           1       0.95      0.98      0.97        60
+           2       0.96      0.94      0.95       112
+           3       0.99      0.96      0.98       111
+
+    accuracy                           0.97       408
+   macro avg       0.97      0.97      0.97       408
+weighted avg       0.97      0.97      0.97       408
+
+Confusion Matrix:
+[[125   0   0   0]
+ [  0  59   1   0]
+ [  4   2 105   1]
+ [  0   1   3 107]]
+
+fold_4 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.96      0.97       131
+           1       0.95      0.98      0.96        54
+           2       0.95      0.97      0.96       130
+           3       0.97      0.96      0.96        93
+
+    accuracy                           0.97       408
+   macro avg       0.96      0.97      0.97       408
+weighted avg       0.97      0.97      0.97       408
+
+Confusion Matrix:
+[[126   1   3   1]
+ [  0  53   0   1]
+ [  1   2 126   1]
+ [  1   0   3  89]]
+
+fold_5 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.97      0.98      0.98       118
+           1       0.95      0.98      0.97        62
+           2       0.99      0.96      0.98       109
+           3       0.97      0.97      0.97       119
+
+    accuracy                           0.98       408
+   macro avg       0.97      0.98      0.97       408
+weighted avg       0.98      0.98      0.98       408
+
+Confusion Matrix:
+[[116   0   1   1]
+ [  1  61   0   0]
+ [  2   0 105   2]
+ [  0   3   0 116]]
+
+Global Classification Report (All Folds):
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98       663
+           1       0.94      0.98      0.96       306
+           2       0.97      0.96      0.97       561
+           3       0.97      0.97      0.97       510
+
+    accuracy                           0.97      2040
+   macro avg       0.97      0.97      0.97      2040
+weighted avg       0.97      0.97      0.97      2040
+

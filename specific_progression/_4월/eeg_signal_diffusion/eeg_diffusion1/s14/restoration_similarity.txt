@@ -1,0 +1,4 @@
+Subject 14 Restoration Similarity Report
+Test Samples: 138
+Average MSE: 2028.444338
+Average Pearson Correlation: 0.001739
