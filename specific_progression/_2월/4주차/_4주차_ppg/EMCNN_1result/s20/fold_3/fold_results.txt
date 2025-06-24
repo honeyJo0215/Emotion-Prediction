@@ -1,0 +1,8 @@
+Subject s20 Fold 3 -- Test Loss: 0.0258, Test Accuracy: 0.9914
+Classification Report:
+{'0': {'precision': 0.9885057471264368, 'recall': 0.9942196531791907, 'f1-score': 0.9913544668587896, 'support': 173.0}, '1': {'precision': 0.9775280898876404, 'recall': 1.0, 'f1-score': 0.9886363636363636, 'support': 174.0}, '2': {'precision': 1.0, 'recall': 0.9712643678160919, 'f1-score': 0.9854227405247813, 'support': 174.0}, '3': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 173.0}, 'accuracy': 0.9913544668587896, 'macro avg': {'precision': 0.9915084592535193, 'recall': 0.9913710052488207, 'f1-score': 0.9913533927549836, 'support': 694.0}, 'weighted avg': {'precision': 0.9915005502785634, 'recall': 0.9913544668587896, 'f1-score': 0.9913409321190343, 'support': 694.0}}
+Confusion Matrix:
+[[172   1   0   0]
+ [  0 174   0   0]
+ [  2   3 169   0]
+ [  0   0   0 173]]

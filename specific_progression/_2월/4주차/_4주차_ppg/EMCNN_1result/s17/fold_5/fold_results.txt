@@ -1,0 +1,8 @@
+Subject s17 Fold 5 -- Test Loss: 0.0047, Test Accuracy: 1.0000
+Classification Report:
+{'0': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 132.0}, '1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 133.0}, '2': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 132.0}, '3': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 133.0}, 'accuracy': 1.0, 'macro avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 530.0}, 'weighted avg': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 530.0}}
+Confusion Matrix:
+[[132   0   0   0]
+ [  0 133   0   0]
+ [  0   0 132   0]
+ [  0   0   0 133]]

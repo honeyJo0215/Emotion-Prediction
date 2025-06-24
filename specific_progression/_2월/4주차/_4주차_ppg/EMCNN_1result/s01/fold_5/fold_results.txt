@@ -1,0 +1,8 @@
+Subject s01 Fold 5 -- Test Loss: 0.0215, Test Accuracy: 0.9925
+Classification Report:
+{'0': {'precision': 1.0, 'recall': 0.9849624060150376, 'f1-score': 0.9924242424242424, 'support': 133.0}, '1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 132.0}, '2': {'precision': 0.9924812030075187, 'recall': 0.9924812030075187, 'f1-score': 0.9924812030075187, 'support': 133.0}, '3': {'precision': 0.9776119402985075, 'recall': 0.9924242424242424, 'f1-score': 0.9849624060150376, 'support': 132.0}, 'accuracy': 0.9924528301886792, 'macro avg': {'precision': 0.9925232858265066, 'recall': 0.9924669628616996, 'f1-score': 0.9924669628616997, 'support': 530.0}, 'weighted avg': {'precision': 0.9925373134328358, 'recall': 0.9924528301886792, 'f1-score': 0.9924669091253004, 'support': 530.0}}
+Confusion Matrix:
+[[131   0   0   2]
+ [  0 132   0   0]
+ [  0   0 132   1]
+ [  0   0   1 131]]

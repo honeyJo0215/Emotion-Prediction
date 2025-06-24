@@ -1,0 +1,8 @@
+Subject s12 Fold 3 -- Test Loss: 0.0306, Test Accuracy: 0.9961
+Classification Report:
+{'0': {'precision': 1.0, 'recall': 0.9845360824742269, 'f1-score': 0.9922077922077922, 'support': 194.0}, '1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 193.0}, '2': {'precision': 0.9847715736040609, 'recall': 1.0, 'f1-score': 0.9923273657289002, 'support': 194.0}, '3': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 194.0}, 'accuracy': 0.9961290322580645, 'macro avg': {'precision': 0.9961928934010152, 'recall': 0.9961340206185567, 'f1-score': 0.9961337894841731, 'support': 775.0}, 'weighted avg': {'precision': 0.9961879810054037, 'recall': 0.9961290322580645, 'f1-score': 0.996128800825443, 'support': 775.0}}
+Confusion Matrix:
+[[191   0   3   0]
+ [  0 193   0   0]
+ [  0   0 194   0]
+ [  0   0   0 194]]

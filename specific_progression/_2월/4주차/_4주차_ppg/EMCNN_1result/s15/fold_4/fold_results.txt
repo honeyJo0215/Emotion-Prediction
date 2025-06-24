@@ -1,0 +1,8 @@
+Subject s15 Fold 4 -- Test Loss: 0.0194, Test Accuracy: 0.9939
+Classification Report:
+{'0': {'precision': 0.991869918699187, 'recall': 1.0, 'f1-score': 0.9959183673469387, 'support': 122.0}, '1': {'precision': 0.9918032786885246, 'recall': 0.9918032786885246, 'f1-score': 0.9918032786885246, 'support': 122.0}, '2': {'precision': 1.0, 'recall': 0.983739837398374, 'f1-score': 0.9918032786885246, 'support': 123.0}, '3': {'precision': 0.991869918699187, 'recall': 1.0, 'f1-score': 0.9959183673469387, 'support': 122.0}, 'accuracy': 0.9938650306748467, 'macro avg': {'precision': 0.9938857790217246, 'recall': 0.9938857790217247, 'f1-score': 0.9938608230177317, 'support': 489.0}, 'weighted avg': {'precision': 0.9938982825411076, 'recall': 0.9938650306748467, 'f1-score': 0.9938566153606168, 'support': 489.0}}
+Confusion Matrix:
+[[122   0   0   0]
+ [  0 121   0   1]
+ [  1   1 121   0]
+ [  0   0   0 122]]
