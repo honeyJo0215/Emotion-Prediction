@@ -1,0 +1,10 @@
+Test Subject: s07
+              precision    recall  f1-score   support
+
+    positive       0.00      0.00      0.00       312
+    negative       0.24      0.62      0.35       130
+     neutral       0.15      0.36      0.21        78
+
+    accuracy                           0.21       520
+   macro avg       0.13      0.33      0.19       520
+weighted avg       0.08      0.21      0.12       520

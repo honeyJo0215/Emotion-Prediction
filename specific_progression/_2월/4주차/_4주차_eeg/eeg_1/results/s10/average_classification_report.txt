@@ -1,0 +1,11 @@
+Average Classification Report over 5 folds:
+
+Class      Precision    Recall  F1-score   Support
+Excited       0.6864    0.7652    0.7155       693
+Relaxed       0.4924    0.3680    0.3831       567
+Stressed      0.5944    0.5424    0.5571       693
+Bored         0.5481    0.5671    0.5192       567
+
+Accuracy      0.5655
+Macro avg     0.5803    0.5607    0.5437      2520
+Weighted avg    0.5863    0.5700    0.5530      2520

@@ -1,0 +1,18 @@
+Subject s19 Fold 4 -- Test Loss: 1.0059, Test Accuracy: 0.5604
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.64      0.67      0.65       210
+           1       0.39      0.36      0.38        58
+           2       0.50      0.64      0.57       118
+           3       0.56      0.34      0.42        94
+
+    accuracy                           0.56       480
+   macro avg       0.52      0.50      0.50       480
+weighted avg       0.56      0.56      0.55       480
+
+Confusion Matrix:
+[[140  14  39  17]
+ [ 17  21  17   3]
+ [ 24  13  76   5]
+ [ 37   6  19  32]]

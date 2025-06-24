@@ -1,0 +1,8 @@
+Subject s04 Fold 4 -- Test Loss: 0.0061, Test Accuracy: 0.9988
+Classification Report:
+{'0': {'precision': 0.9951219512195122, 'recall': 1.0, 'f1-score': 0.9975550122249389, 'support': 204.0}, '1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 204.0}, '2': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 204.0}, '3': {'precision': 1.0, 'recall': 0.9950980392156863, 'f1-score': 0.9975429975429976, 'support': 204.0}, 'accuracy': 0.9987745098039216, 'macro avg': {'precision': 0.998780487804878, 'recall': 0.9987745098039216, 'f1-score': 0.9987745024419842, 'support': 816.0}, 'weighted avg': {'precision': 0.998780487804878, 'recall': 0.9987745098039216, 'f1-score': 0.9987745024419841, 'support': 816.0}}
+Confusion Matrix:
+[[204   0   0   0]
+ [  0 204   0   0]
+ [  0   0 204   0]
+ [  1   0   0 203]]

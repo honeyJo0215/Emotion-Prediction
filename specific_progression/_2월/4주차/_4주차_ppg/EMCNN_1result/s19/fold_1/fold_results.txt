@@ -1,0 +1,8 @@
+Subject s19 Fold 1 -- Test Loss: 0.4076, Test Accuracy: 0.9265
+Classification Report:
+{'0': {'precision': 1.0, 'recall': 0.7554347826086957, 'f1-score': 0.8606811145510835, 'support': 184.0}, '1': {'precision': 1.0, 'recall': 0.994535519125683, 'f1-score': 0.9972602739726028, 'support': 183.0}, '2': {'precision': 0.9777777777777777, 'recall': 0.9565217391304348, 'f1-score': 0.967032967032967, 'support': 184.0}, '3': {'precision': 0.7863247863247863, 'recall': 1.0, 'f1-score': 0.8803827751196173, 'support': 184.0}, 'accuracy': 0.926530612244898, 'macro avg': {'precision': 0.941025641025641, 'recall': 0.9266230102162034, 'f1-score': 0.9263392826690677, 'support': 735.0}, 'weighted avg': {'precision': 0.9409454038025467, 'recall': 0.926530612244898, 'f1-score': 0.9262427915244371, 'support': 735.0}}
+Confusion Matrix:
+[[139   0   4  41]
+ [  0 182   0   1]
+ [  0   0 176   8]
+ [  0   0   0 184]]

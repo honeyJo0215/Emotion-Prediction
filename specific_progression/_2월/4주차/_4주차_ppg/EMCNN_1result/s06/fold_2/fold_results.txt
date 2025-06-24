@@ -1,0 +1,8 @@
+Subject s06 Fold 2 -- Test Loss: 0.0097, Test Accuracy: 0.9971
+Classification Report:
+{'0': {'precision': 0.9942857142857143, 'recall': 1.0, 'f1-score': 0.997134670487106, 'support': 174.0}, '1': {'precision': 1.0, 'recall': 0.9884393063583815, 'f1-score': 0.9941860465116279, 'support': 173.0}, '2': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 174.0}, '3': {'precision': 0.9942528735632183, 'recall': 1.0, 'f1-score': 0.9971181556195965, 'support': 173.0}, 'accuracy': 0.9971181556195965, 'macro avg': {'precision': 0.9971346469622331, 'recall': 0.9971098265895953, 'f1-score': 0.9971097181545827, 'support': 694.0}, 'weighted avg': {'precision': 0.997134670622696, 'recall': 0.9971181556195965, 'f1-score': 0.9971139187801993, 'support': 694.0}}
+Confusion Matrix:
+[[174   0   0   0]
+ [  1 171   0   1]
+ [  0   0 174   0]
+ [  0   0   0 173]]

@@ -1,0 +1,8 @@
+Subject s11 Fold 4 -- Test Loss: 0.1737, Test Accuracy: 0.9444
+Classification Report:
+{'0': {'precision': 0.9925925925925926, 'recall': 0.8758169934640523, 'f1-score': 0.9305555555555556, 'support': 153.0}, '1': {'precision': 0.971830985915493, 'recall': 0.9019607843137255, 'f1-score': 0.9355932203389831, 'support': 153.0}, '2': {'precision': 0.9161676646706587, 'recall': 1.0, 'f1-score': 0.95625, 'support': 153.0}, '3': {'precision': 0.9107142857142857, 'recall': 1.0, 'f1-score': 0.9532710280373832, 'support': 153.0}, 'accuracy': 0.9444444444444444, 'macro avg': {'precision': 0.9478263822232574, 'recall': 0.9444444444444444, 'f1-score': 0.9439174509829804, 'support': 612.0}, 'weighted avg': {'precision': 0.9478263822232575, 'recall': 0.9444444444444444, 'f1-score': 0.9439174509829805, 'support': 612.0}}
+Confusion Matrix:
+[[134   4  13   2]
+ [  1 138   1  13]
+ [  0   0 153   0]
+ [  0   0   0 153]]

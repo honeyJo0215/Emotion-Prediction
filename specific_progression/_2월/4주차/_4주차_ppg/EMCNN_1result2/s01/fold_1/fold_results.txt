@@ -1,0 +1,8 @@
+Subject s01 Fold 1 -- Test Loss: 2.3422, Test Accuracy: 0.2623
+Classification Report:
+{'0': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 140.0}, '1': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 65.0}, '2': {'precision': 0.2622549019607843, 'recall': 1.0, 'f1-score': 0.4155339805825243, 'support': 107.0}, '3': {'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'support': 96.0}, 'accuracy': 0.2622549019607843, 'macro avg': {'precision': 0.06556372549019608, 'recall': 0.25, 'f1-score': 0.10388349514563107, 'support': 408.0}, 'weighted avg': {'precision': 0.0687776336024606, 'recall': 0.2622549019607843, 'f1-score': 0.10897582333904436, 'support': 408.0}}
+Confusion Matrix:
+[[  0   0 140   0]
+ [  0   0  65   0]
+ [  0   0 107   0]
+ [  0   0  96   0]]

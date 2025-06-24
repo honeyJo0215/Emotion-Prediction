@@ -1,0 +1,8 @@
+Subject s08 Fold 2 -- Test Loss: 0.2181, Test Accuracy: 0.9299
+Classification Report:
+{'0': {'precision': 1.0, 'recall': 0.7482517482517482, 'f1-score': 0.856, 'support': 143.0}, '1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 143.0}, '2': {'precision': 0.9019607843137255, 'recall': 0.971830985915493, 'f1-score': 0.9355932203389831, 'support': 142.0}, '3': {'precision': 0.8511904761904762, 'recall': 1.0, 'f1-score': 0.9196141479099679, 'support': 143.0}, 'accuracy': 0.9299474605954466, 'macro avg': {'precision': 0.9382878151260504, 'recall': 0.9300206835418103, 'f1-score': 0.9278018420622377, 'support': 571.0}, 'weighted avg': {'precision': 0.9383514351449862, 'recall': 0.9299474605954466, 'f1-score': 0.9277881969163941, 'support': 571.0}}
+Confusion Matrix:
+[[107   0  15  21]
+ [  0 143   0   0]
+ [  0   0 138   4]
+ [  0   0   0 143]]

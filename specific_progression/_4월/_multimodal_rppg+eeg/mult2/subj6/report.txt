@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+           0       0.92      0.92      0.92        24
+           1       0.91      0.83      0.87        12
+           2       0.89      0.92      0.90        36
+
+    accuracy                           0.90        72
+   macro avg       0.91      0.89      0.90        72
+weighted avg       0.90      0.90      0.90        72
