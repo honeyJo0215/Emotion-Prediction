@@ -1,0 +1,10 @@
+Test Subject: s14
+              precision    recall  f1-score   support
+
+    positive       0.36      0.23      0.28      7488
+    negative       0.47      0.71      0.56      8892
+     neutral       0.00      0.00      0.00      1872
+
+    accuracy                           0.44     18252
+   macro avg       0.28      0.31      0.28     18252
+weighted avg       0.38      0.44      0.39     18252

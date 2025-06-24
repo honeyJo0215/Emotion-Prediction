@@ -1,0 +1,10 @@
+Test Subject: s19
+              precision    recall  f1-score   support
+
+    positive       0.30      0.43      0.35      5616
+    negative       0.33      0.55      0.41      5616
+     neutral       0.43      0.07      0.13      7488
+
+    accuracy                           0.32     18720
+   macro avg       0.35      0.35      0.30     18720
+weighted avg       0.36      0.32      0.28     18720

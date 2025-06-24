@@ -1,0 +1,197 @@
+Overall LOSO Test Accuracy: 0.3320
+
+Test Subject 1:
+              precision    recall  f1-score   support
+
+           0       0.64      0.36      0.46       229
+           1       0.49      0.84      0.62       228
+           2       0.17      0.14      0.15       163
+           3       0.31      0.25      0.27       202
+
+    accuracy                           0.42       822
+   macro avg       0.40      0.40      0.38       822
+weighted avg       0.42      0.42      0.40       822
+
+
+Test Subject 2:
+              precision    recall  f1-score   support
+
+           0       0.28      0.99      0.44       229
+           1       0.33      0.01      0.03       228
+           2       0.50      0.05      0.09       163
+           3       0.00      0.00      0.00       202
+
+    accuracy                           0.29       822
+   macro avg       0.28      0.26      0.14       822
+weighted avg       0.27      0.29      0.15       822
+
+
+Test Subject 3:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       229
+           1       0.82      0.21      0.33       228
+           2       0.21      0.98      0.34       163
+           3       0.00      0.00      0.00       202
+
+    accuracy                           0.25       822
+   macro avg       0.26      0.30      0.17       822
+weighted avg       0.27      0.25      0.16       822
+
+
+Test Subject 4:
+              precision    recall  f1-score   support
+
+           0       0.43      0.98      0.60       229
+           1       0.85      0.12      0.21       228
+           2       0.12      0.12      0.12       163
+           3       0.87      0.42      0.56       202
+
+    accuracy                           0.43       822
+   macro avg       0.57      0.41      0.37       822
+weighted avg       0.59      0.43      0.39       822
+
+
+Test Subject 5:
+              precision    recall  f1-score   support
+
+           0       0.20      0.00      0.01       229
+           1       0.52      0.42      0.46       228
+           2       0.37      0.48      0.41       163
+           3       0.32      0.68      0.44       202
+
+    accuracy                           0.38       822
+   macro avg       0.35      0.39      0.33       822
+weighted avg       0.35      0.38      0.32       822
+
+
+Test Subject 6:
+              precision    recall  f1-score   support
+
+           0       0.67      0.19      0.29       229
+           1       0.20      0.19      0.20       228
+           2       0.22      0.39      0.28       163
+           3       0.64      0.82      0.72       202
+
+    accuracy                           0.38       822
+   macro avg       0.43      0.40      0.37       822
+weighted avg       0.45      0.38      0.37       822
+
+
+Test Subject 7:
+              precision    recall  f1-score   support
+
+           0       0.62      0.02      0.04       229
+           1       0.17      0.00      0.01       228
+           2       0.27      0.61      0.37       163
+           3       0.40      0.86      0.54       202
+
+    accuracy                           0.34       822
+   macro avg       0.36      0.37      0.24       822
+weighted avg       0.37      0.34      0.22       822
+
+
+Test Subject 8:
+              precision    recall  f1-score   support
+
+           0       0.36      0.97      0.52       229
+           1       0.35      0.12      0.18       228
+           2       0.37      0.17      0.23       163
+           3       0.89      0.16      0.28       202
+
+    accuracy                           0.38       822
+   macro avg       0.49      0.36      0.30       822
+weighted avg       0.49      0.38      0.31       822
+
+
+Test Subject 9:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00       229
+           1       0.00      0.00      0.00       228
+           2       0.20      1.00      0.33       163
+           3       0.00      0.00      0.00       202
+
+    accuracy                           0.20       822
+   macro avg       0.05      0.25      0.08       822
+weighted avg       0.04      0.20      0.07       822
+
+
+Test Subject 10:
+              precision    recall  f1-score   support
+
+           0       0.28      1.00      0.44       229
+           1       0.00      0.00      0.00       228
+           2       0.00      0.00      0.00       163
+           3       0.50      0.00      0.01       202
+
+    accuracy                           0.28       822
+   macro avg       0.19      0.25      0.11       822
+weighted avg       0.20      0.28      0.12       822
+
+
+Test Subject 11:
+              precision    recall  f1-score   support
+
+           0       0.28      1.00      0.44       229
+           1       0.00      0.00      0.00       228
+           2       0.00      0.00      0.00       163
+           3       0.00      0.00      0.00       202
+
+    accuracy                           0.28       822
+   macro avg       0.07      0.25      0.11       822
+weighted avg       0.08      0.28      0.12       822
+
+
+Test Subject 12:
+              precision    recall  f1-score   support
+
+           0       0.38      0.59      0.47       229
+           1       0.31      0.53      0.39       228
+           2       0.13      0.06      0.08       163
+           3       0.12      0.00      0.01       202
+
+    accuracy                           0.32       822
+   macro avg       0.24      0.30      0.24       822
+weighted avg       0.25      0.32      0.26       822
+
+
+Test Subject 13:
+              precision    recall  f1-score   support
+
+           0       0.56      0.46      0.51       229
+           1       0.23      0.10      0.14       228
+           2       0.21      0.04      0.07       163
+           3       0.23      0.58      0.33       202
+
+    accuracy                           0.31       822
+   macro avg       0.31      0.30      0.26       822
+weighted avg       0.32      0.31      0.27       822
+
+
+Test Subject 14:
+              precision    recall  f1-score   support
+
+           0       0.50      0.00      0.01       229
+           1       0.50      0.24      0.33       228
+           2       0.21      0.93      0.35       163
+           3       0.00      0.00      0.00       202
+
+    accuracy                           0.25       822
+   macro avg       0.30      0.29      0.17       822
+weighted avg       0.32      0.25      0.16       822
+
+
+Test Subject 15:
+              precision    recall  f1-score   support
+
+           0       0.36      0.62      0.45       229
+           1       0.41      0.55      0.47       228
+           2       0.00      0.00      0.00       163
+           3       0.93      0.57      0.71       202
+
+    accuracy                           0.46       822
+   macro avg       0.43      0.43      0.41       822
+weighted avg       0.44      0.46      0.43       822
+
+

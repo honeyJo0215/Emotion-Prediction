@@ -1,0 +1,10 @@
+Test Subject: s11
+              precision    recall  f1-score   support
+
+    positive       0.23      0.24      0.23      4212
+    negative       0.24      0.68      0.35      4212
+     neutral       0.36      0.01      0.02      8424
+
+    accuracy                           0.24     16848
+   macro avg       0.27      0.31      0.20     16848
+weighted avg       0.30      0.24      0.15     16848
