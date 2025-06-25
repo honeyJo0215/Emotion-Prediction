@@ -1,1 +1,1 @@
-지금까지 한 전체 코드를 업로드함.(파일 분류 없이)
+Uploaded every codes for our progression
